@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  control_no: MyString
+  machine_code: MyString
+  machine_name: MyString
+
+two:
+  control_no: MyString
+  machine_code: MyString
+  machine_name: MyString

@@ -1,0 +1,20 @@
+<% if product_counter == 0 %>
+    <table class="products">
+        <thead>
+            <tr>
+                <th>管理番号</th>
+                <th>機種コード</th>
+                <th>名称</th>
+            </tr>
+        </thead>
+        <tbody>
+<% end %>
+<tr>
+    <td><%= product.control_no %></td>
+    <td><%= product.machine_code %></td>
+    <td><%= product.machine_name %></td>
+</tr>
+<% if product_counter == @products.length %>
+        </tbody>
+    </table>
+<% end %>
