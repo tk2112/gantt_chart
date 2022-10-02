@@ -1,6 +1,13 @@
 # 参考：https://qiita.com/croquette0212/items/7b99d9339fd773ddf20b
 FROM ruby:3.1
 
+# aptからパッケージインストール
+RUN apt update && apt install -y \
+    nodejs \
+    npm
+# yarnインストール
+RUN npm install -g yarn
+
 RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
